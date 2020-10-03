@@ -1,16 +1,25 @@
 .jumbotron {
-    background-image: url("/assets/img/background.jpg");
-    background-repeat: no-repeat;
+    background-image: url("/assets/images/BurgerOne.jpg");
     background-position: center;
     background-size: cover;
     margin-top: 10px;
+    height: 400px;
 }
 
-.jumbotron > h1 {
+.jumbotron {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#newburger {
+.header{
+    background-color:#f67f72;
+}
+
+label {
+    padding-left: 140px;
+    padding-top: 30px;
+}
+
+#createburger {
     border-radius: 5px;
 }
 
