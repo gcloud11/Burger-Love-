@@ -1,3 +1,14 @@
+.navbar{
+    justify-content: center;
+    font-family: 'Architects Daughter', cursive !important;
+    font-size: 50px !important;
+    margin: auto;
+    max-width: 400px;
+    position: relative;
+    bottom: 0;
+
+}
+
 .jumbotron {
     background-image: url("/assets/images/BurgerOne.jpg");
     background-position: center;
@@ -14,24 +25,37 @@
     background-color:#f67f72;
 }
 
-label {
-    padding-left: 140px;
-    padding-top: 30px;
+.newBurg {
+    color: black;
+    font-weight: 900 !important;
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive !important;
+
 }
 
-#createburger {
-    border-radius: 5px;
+
+.burgername{
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Fredoka One', cursive;
 }
 
-#color-override {
-    color: #fff;
+
+.form-group {
+    padding-left: 250px;
+    padding-top: 10px;
+    margin: auto;
+    max-width: 900px;
+    position: relative;
+    bottom: 0;
+
 }
 
 #lefthead {
     background-color: #5cb85c;
     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 18px;
+    font-family: 'Architects Daughter', cursive;
 }
 
 #eatbutton, #trashbutton {
@@ -42,5 +66,6 @@ label {
     background-color: #f0ad4e;
     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 18px;
+    font-family: 'Architects Daughter', cursive;
 }

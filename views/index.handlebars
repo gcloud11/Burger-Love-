@@ -1,23 +1,31 @@
 {{!-- Setup the index.handlebars to have the template that Handlebars can render onto. --}}
 <div class="container">
     <!-- As a heading -->
+    {{!-- <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Eat-Da-Burger</span>
+    </nav> --}}
+
     <nav class="navbar navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1">Eat-Da-Burger</span>
-</nav>
-    <div class="jumbotron header">
-        <h1 id="color-override"></h1>
-        <br>
-        {{!-- <h2 id="color-override">Create Your Burger</h2> --}}
+        <span class="navbar-text">
+            Eat-Da-Burger
+        </span>
+    </nav>
+
         <panel>
             <form class="create-form">
-                <div class="form-group"><br><br><br><br><br><br><br><br><br><br><br>
-                    <label for="createburger" id="color-override">Your Juicy Burger</label>
-                    <input type="text" id="createburger" name="burger">
+                <div class="form-group"> 
+                    <label for="newburger" class="newBurg">Your Juicy Burger</label>
+                    <input type="text" id="newburger" name="burger">
                     {{!-- Create a button in index.handlebars that will submit the user input into the database. --}}
                     <button type="submit" class="btn btn-primary" id="addburger"><span class="fas fa-hamburger"></span></button>
                 </div>
             </form>
         </panel>
+
+    <div class="jumbotron header">
+        <h1></h1>
+        <br>
+
     </div><!-- /jumbotron -->
 
     <div class="row">
@@ -29,7 +37,7 @@
                     <ul>
                         {{#each burgers}}
                             {{#unless devoured}}
-                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                                <span class="burgername"><strong> {{this.id}} - {{this.burger_name}} </strong></span>
                                 <button type="button" class="eatburger btn btn-success" id ="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fas fa-utensils"></span></button>
                                 <hr>
                             {{/unless}}
@@ -46,7 +54,7 @@
                     <ul>
                         {{#each burgers}}
                             {{#if devoured}}
-                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                                <span class="burgername"><strong> {{this.id}} - {{this.burger_name}} </strong></span>
                                 <button type="button" class="trashburger btn btn-dark" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="far fa-trash-alt"></span></button>
                                 <hr>
                             {{/if}}
