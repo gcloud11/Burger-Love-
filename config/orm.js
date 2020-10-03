@@ -1,4 +1,4 @@
-// Require connection.js
+// Import (require) connection.js
 var connection = require("../config/connection.js");
 
 // Helper function for SQL syntax.

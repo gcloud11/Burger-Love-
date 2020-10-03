@@ -2,14 +2,13 @@
 <div class="container">
 
     <div class="jumbotron">
-        <h1 id="color-override">Eat the Burger</h1>
-        <p id="color-override">Make burgers, eat burgers.</p>
+        <h1 id="color-override">Eat-Da-Burger</h1>
         <br>
-        <h2 id="color-override">Make a Burger</h2>
+        <h2 id="color-override">Create Your Burger</h2>
         <panel>
             <form class="create-form">
                 <div class="form-group">
-                    <label for="newburger" id="color-override">New Burger:</label>
+                    <label for="newburger" id="color-override">Your Juicy Burger</label>
                     <input type="text" id="newburger" name="burger">
                     {{!-- Create a button in index.handlebars that will submit the user input into the database. --}}
                     <button type="submit" class="btn btn-success" id="addburger"><span class="fa fa-thumbs-up"></span></button>
@@ -22,7 +21,7 @@
         <!-- Undevoured Burgers -->
         <div class="col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading" id="lefthead"><strong>New Burgers</strong></div>
+                <div class="panel-heading" id="lefthead"><strong>Created Burgers</strong></div>
                 <div class="panel-body">
                     <ul>
                         {{#each burgers}}
