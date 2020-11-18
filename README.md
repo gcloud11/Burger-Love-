@@ -24,7 +24,6 @@
 - Node.Js
 - Express
 - MySQL
-
 ```
 ## Visuals
 
